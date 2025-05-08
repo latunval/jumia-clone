@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Tagesschrift" !important;
+}
+
+.carousel-item {
+    background-color: #ccc !important;
+    text-align: center;
+}
+.img {
+    height: 50vh;
+    /* width: 30%; */
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.imgs {
+    height: 150px;
+}
+.Cloth, .Elect {
+    display:  grid;
+    grid-template-columns: 33% 33% 33%;
+    /* grid-template-columns: auto auto auto; */
+    border:  2px solid #ccc;
+}
+
+.Cloth  h2{
+    color: red;
+}
+/* .border {
+} */
+
+@media screen and (max-width:768px) {
+    .Cloth, .Elect{
+        display: flex;
+        flex-direction: column;
+    }
+}
