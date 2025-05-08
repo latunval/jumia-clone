@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jumia Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+  <!-- Toast container -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+  <div id="toast-container"></div>
+</div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Peace</a>
+      <form class="d-flex mx-auto">
+        <input class="form-control me-2" type="search" placeholder="Search products" id="searchInput">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <a href="/html/cart.html" class="btn btn-outline-dark">Cart (<span class="cartCount" id="cartCount">0</span>)</a>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- <div class="carousel-item active">
+        <img src="https://via.placeholder.com/1200x400?text=Promo+Banner+1" class="d-block w-100" alt="Promo 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1200x400?text=Promo+Banner+2" class="d-block w-100" alt="Promo 2">
+      </div> -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+<div class="cloth container my-5">
+  <h2 id="Cloths">Featured Cloths</h2>
+  <div class="more">
+  <section class="Cloth"></section>
+  </div>
+</div>
+<div class="elect container my-5">
+  <h2 id="elect">Featured Electronics</h2>
+  <div class="mores">
+  <section class="Elect"></section>
+  </div>
+</div>
+  <!-- Featured Products -->
+  <section class="container my-5">
+    <h2>Featured Products</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">$50</p>
+            <button class="btn btn-primary add-to-cart" data-id="1" data-name="Product 1" data-price="50">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">$50</p>
+            <button class="btn btn-primary add-to-cart" data-id="1" data-name="Product 1" data-price="50">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- Add more product cards -->
+    </div>
+  </section>
+
+  
+  <!-- About Section -->
+  <section class="container my-5" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Jumia Clone, your number one source for all things shopping. We're dedicated to giving you the very best of products, with a focus on dependability, customer service, and uniqueness.</p>
+    <p>Founded in 2023, Jumia Clone has come a long way from its beginnings. When we first started out, our passion for providing the best products drove us to do tons of research, so that Jumia Clone can offer you the world's most advanced products.</p>
+    <p>We now serve customers all over the world and are thrilled that we're able to turn our passion into our own website.</p>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="container my-5" id="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What is Jumia Clone?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Jumia Clone is an online shopping platform that offers a wide range of products from electronics to clothing.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How can I contact customer support?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can contact our customer support via the contact form on our website or through our email support@jumia-clone.com.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What payment methods do you accept?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We accept various payment methods including credit cards, PayPal, and bank transfers.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Jumia Clone</h5>
+          <p>Your one-stop shop for all your needs. Shop with us for the best deals and quality products.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#about" class="text-dark">About Us</a></li>
+            <li><a href="#faqs" class="text-dark">FAQs</a></li>
+            <li><a href="/html/cart.html" class="text-dark">Cart</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="mailto:support@jumia-clone.com" class="text-dark">support@jumia-clone.com</a></li>
+            <li><a href="tel:+123456789" class="text-dark">+123 456 789</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+      © 2023 Jumia Clone. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
